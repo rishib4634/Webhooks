@@ -24,6 +24,8 @@ if(app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+//Using minimal apis here
+
 app.MapPost("webhooks/subscription", (
     CreateWebhookRequest request,
     InMemoryWebhookSubscriptionRepository subscriptionRepository) =>
